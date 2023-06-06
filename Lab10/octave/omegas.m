@@ -16,5 +16,5 @@ text(5, alpha + 0.05, "\\alpha");
 
 ylim([0, max(w2) + 0.5])
 
-print -dpdfcrop ../figures/omegas.pdf
+print ../figures/omegas.png
 

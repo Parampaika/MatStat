@@ -12,5 +12,5 @@ ylabel("\\mu")
 legend("1st model \\omega \\geq 1", "2nd model \\omega \\geq 0")
 xlim([min(Ss1) max(Ss1)])
 
-print -dpdfcrop ../figures/mode_freq.pdf
+print ../figures/mode_freq.png
 

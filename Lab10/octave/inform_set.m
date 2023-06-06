@@ -16,5 +16,5 @@ ylim([min(y) - 1e-7, max(y) + 1e-7])
 xlabel("\\beta_0")
 ylabel("\\beta_1")
 
-print -dpdfcrop ../figures/inform_set.pdf
+print ../figures/inform_set.png
 

@@ -11,5 +11,5 @@ ylabel("mV")
 xlim([1, size(input, 1)])
 ylim([input(1) - eps * w1(1), input(end) + eps * w1(end)])
 
-print -dpdfcrop ../figures/data_regr.pdf
-
+%print -dpdfcrop ../figures/data_regr.pdf
+print ../figures/data_regr.png

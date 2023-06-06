@@ -20,27 +20,27 @@
 ## @itemize @w
 ## @item Input
 ##   @itemize @w
-##     @item @var{irproblem}: structure with the description of interval 
-##           regression problem 
+##     @item @var{irproblem}: structure with the description of interval
+##           regression problem
 ##     @item @var{xlimits}: vector of form [xmin xmax], limits for X axis
 ##   @end itemize
 ## @item Example
 ##   @itemize @w
 ##   @item ## Define an interval regression problem
 ##   @item X = [1 1; 1 1.5; 1 2];                   # X values
-##   @item y = [1.5; 1.4; 2.5];                     # y values 
+##   @item y = [1.5; 1.4; 2.5];                     # y values
 ##   @item epsilon = 0.75;                          # y error bound
 ##   @item [irproblem] = ir_problem(X, y, epsilon); # Define IR problem
 ##   @item figure
 ##   @item ir_plotmodelset(irproblem);              # Plot set of models
 ##   @item
-##   @item ## Define another interval regression problem with additional 
+##   @item ## Define another interval regression problem with additional
 ##   @item ## lower bound constraints on regression parameters
-##   @item [irproblem2] = ir_problem(irproblem, [-inf 0]); 
-##   @item 
+##   @item [irproblem2] = ir_problem(irproblem, [-inf 0]);
+##   @item
 ##   @item figure
 ##   @item ir_plotmodelset(irproblem2);             # Plot another set of models
-##   @item 
+##   @item
 ##   @end itemize
 ## @end itemize
 ##
@@ -55,10 +55,10 @@ function ir_plotmodelset(irproblem, xlimits)
       error("Not enough data");
    endif
 
-   if size(X,2) == 2 && all(X(:,1)==1) 
+   if size(X,2) == 2 && all(X(:,1)==1)
        onescol = 1;
        xcol = 2;
-   elseif size(X,2) == 2 && all(X(:,2)==1) 
+   elseif size(X,2) == 2 && all(X(:,2)==1)
        xcol = 1;
        onescol = 2;
    elseif size(X,2)==1
@@ -88,4 +88,4 @@ function ir_plotmodelset(irproblem, xlimits)
    plot(x,yp(:,1),"m-","LineWidth",1);
    plot(x,yp(:,2),"m-","LineWidth",1);
 endfunction
-   
+

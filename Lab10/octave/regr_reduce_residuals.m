@@ -11,5 +11,5 @@ xlim([1, size(residuals2, 1)])
 s = [inf(residuals2).' sup(residuals2).']
 ylim([min(s), max(s)])
 
-print -dpdfcrop ../figures/regr_reduce_residuals.pdf
+print ../figures/regr_reduce_residuals.png
 

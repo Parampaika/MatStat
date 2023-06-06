@@ -11,10 +11,10 @@ title("Corridor of joint dependencies")
 xlabel("n")
 ylabel("mV")
 
-print -dpdfcrop ../figures/corridor_of_joint_dep.pdf
+print ../figures/corridor_of_joint_dep.png
 
 xlim("auto")
 ylim("auto")
 
-print -dpdfcrop ../figures/corridor_of_joint_dep_zoomout.pdf
+print ../figures/corridor_of_joint_dep_zoomout.png
 

@@ -11,5 +11,5 @@ xlabel("n")
 ylabel("mV")
 xlim([0, size(input, 1)])
 
-print -dpdfcrop ../figures/data_int.pdf
-
+%print -dpdfcrop ../figures/data_int.pdf
+print ../figures/data_int.png
